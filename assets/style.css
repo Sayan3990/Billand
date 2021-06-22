@@ -1,0 +1,699 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+html {
+  background-color: #ccffdd;
+  animation-name: mainani;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+}
+@keyframes mainani {
+  0% {
+    background-color: #ccffdd;
+  }
+
+  25% {
+    background-color: #ccffff;
+  }
+
+  50% {
+    background-color: #ffe6ff;
+  }
+
+  75% {
+    background-color: #ffffe6;
+  }
+}
+@font-face {
+  src: url(san1.otf);
+  font-family: san1;
+}
+@font-face {
+  src: url(Kalam-Bold.ttf);
+  font-family: san2;
+}
+@font-face {
+  src: url(YanoneKaffeesatz-Regular.ttf);
+  font-family: san3;
+}
+@font-face {
+  src: url(Sriracha-Regular.ttf);
+  font-family: san4;
+}
+.start {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #000020;
+}
+.start a {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #1affff, 0 0 15px #1affff, 0 0 25px #1affff, 0 0 50px #1affff, 0 0 100px #1affff;
+}
+.start a button {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-image: radial-gradient(#1ac6ff, #0066ff, #000030);
+  visibility: visible;
+  animation-name: enter1;
+  animation-timing-function: linear;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  border-radius: 50%;
+  transform-origin: center;
+  font-size: 30px;
+  font-family: san2;
+  color: white;
+  text-shadow: 0 0 10px #006600;
+}
+@keyframes enter1 {
+  0% {
+    width: 240px;
+    height: 240px;
+    border-left: 7px double #ff00ff;
+    transform: translate(-50%, -50%) rotateZ(10deg);
+    font-size: 35px;
+  }
+
+  25% {
+    width: 220px;
+    height: 220px;
+    border-top: 7px dotted #ff8000;
+    transform: translate(-50%, -50%) rotateZ(-10deg);
+  }
+
+  50% {
+    width: 200px;
+    height: 200px;
+    border-right: 7px dashed #ff00ff;
+    transform: translate(-50%, -50%) rotateZ(0);
+  }
+
+  75% {
+    width: 200px;
+    height: 200px;
+    border-bottom: 7px solid #ff8000;
+    transform: translate(-50%, -50%) rotateZ(-10deg);
+    font-size: 10px;
+  }
+}
+.start a button:hover {
+  width: 250px;
+  height: 250px;
+  border: 6px solid #ff00ff;
+  transform: translate(-50%, -50%) rotateZ(0);
+  font-size: 35px;
+  animation-name: none;
+}
+.load {
+  position: absolute;
+  z-index: 300;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: #001;
+  visibility: visible;
+}
+.load span {
+  font-family: sans-serif;
+  width: 100%;
+  font-size: calc(100vh/8.1);
+  overflow: hidden;
+  visibility: hidden;
+  color: #001;
+  text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 50px #fff;
+}
+.load span:nth-child(2n+1) {
+  background-image: linear-gradient(90deg, transparent, #66ff33);
+  animation-name: load1;
+  animation-timing-function: ease-out;
+}
+.load span:nth-child(2n) {
+  background-image: linear-gradient(-90deg, transparent, #00ff00);
+  animation-name: load2;
+  animation-timing-function: ease-out;
+}
+.load span:nth-child(1) {
+  animation-duration: 3s;
+}
+.load span:nth-child(2) {
+  animation-duration: 2.8s;
+  animation-delay: 0.2s;
+}
+.load span:nth-child(3) {
+  animation-duration: 2.6s;
+  animation-delay: 0.4s;
+}
+.load span:nth-child(4) {
+  animation-duration: 2.4s;
+  animation-delay: 0.6s;
+}
+.load span:nth-child(5) {
+  animation-duration: 2.2s;
+  animation-delay: 0.8s;
+}
+.load span:nth-child(6) {
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+.load span:nth-child(7) {
+  animation-duration: 1.8s;
+  animation-delay: 1.2s;
+}
+@keyframes load1 {
+  0% {
+    width: 0;
+    visibility: visible;
+    opacity: 0;
+    text-shadow: 0 0 15px #fff;
+  }
+
+  60% {
+    color: #fff;
+    opacity: 1;
+    text-shadow: 0 0 15px #001;
+    ;
+  }
+
+  100% {
+    width: 100%;
+    color: #001;
+    opacity: 0;
+    text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 30px #fff, 0 0 60px #fff;
+  }
+}
+@keyframes load2 {
+  0% {
+    margin-left: 100%;
+    visibility: visible;
+    opacity: 0;
+    text-shadow: 0 0 15px #fff;
+  }
+
+  60% {
+    color: #fff;
+    opacity: 1;
+    text-shadow: 0 0 15px #001;
+  }
+
+  100% {
+    margin-left: 0;
+    color: #001;
+    opacity: 0;
+    text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 30px #fff, 0 0 60px #fff;
+  }
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.wrapper {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  background-color: transparent;
+  top: 55%;
+  height: auto;
+  text-align: center;
+  text-decoration: none;
+  animation-name: imgani;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.myimage1, .myimage2, .myimage3, .myimage4 {
+  transition: all 1s ease;
+  opacity: 1;
+  margin: 10px;
+  height: auto;
+  flex-basis: 40%;
+  animation-name: imgani1;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-delay: 2.8s;
+  transition-duration: 1s;
+  border-radius: 8px;
+  box-shadow: 0 3px 3px grey, 10px 15px 15px grey;
+}
+.myimage2, .myimage4 {
+  animation-name: imgani2;
+}
+.myimage1 {
+  background-color: skyblue;
+  border: 2px solid darkblue;
+}
+.myimage2 {
+  background-color: #ffff33;
+  border: 2px solid #996600;
+}
+.myimage3 {
+  background-color: #11ff11;
+  border: 2px solid #008800;
+}
+.myimage4 {
+  background-color: #ffbf80;
+  border: 2px solid brown;
+}
+@keyframes imgani {
+  0%, 100% {
+    z-index: 250;
+  }
+}
+@keyframes imgani1 {
+  0% {
+    opacity: 0;
+    transform: matrix3d(1, 0, 0, 0.04,
+        0, 1, 0, 0,
+        0, 0, 1, 0,
+        0, 0, 0, 1);
+  }
+
+  50% {
+    transform: rotateZ(30deg) matrix3d(1, 0, 0, 0,
+        0, 1, 0, 0,
+        0, 0, 1, 0,
+        0, 0, 0, 1);
+  }
+
+  70% {
+    opacity: 1;
+    transform: rotateZ(-10deg);
+  }
+
+  100% {
+    transform: rotateZ(0) matrix3d(1, 0, 0, 0,
+        0, 1, 0, 0,
+        0, 0, 1, 0,
+        0, 0, 0, 1);
+  }
+}
+@keyframes imgani2 {
+  0% {
+    opacity: 0;
+    transform: matrix3d(1, 0, 0, -0.04,
+        0, 1, 0, 0,
+        0, 0, 1, 0,
+        0, 0, 0, 1);
+  }
+
+  50% {
+    transform: rotateZ(-30deg) matrix3d(1, 0, 0, 0,
+        0, 1, 0, 0,
+        0, 0, 1, 0,
+        0, 0, 0, 1);
+  }
+
+  70% {
+    opacity: 1;
+    transform: rotateZ(10deg);
+  }
+
+  100% {
+    transform: rotateZ(0) matrix3d(1, 0, 0, 0,
+        0, 1, 0, 0,
+        0, 0, 1, 0,
+        0, 0, 0, 1);
+  }
+}
+.myimage1 h6, .myimage2 h6, .myimage3 h6, .myimage4 h6 {
+  visibility: visible;
+  padding: 5px;
+  font-size: 24px;
+  font-family: san4;
+  color: darkblue;
+  animation-name: text2;
+  animation-duration: 6s;
+  transform: rotateZ(0);
+  opacity: 1;
+  transform-origin: left;
+}
+.myimage2 h6 {
+  color: green;
+  animation-name: text1;
+}
+.myimage3 h6 {
+  color: white;
+}
+.myimage4 h6 {
+  color: #330033;
+  animation-name: text1;
+}
+.myimage1 p, .myimage2 p, .myimage3 p, .myimage4 p {
+  font-family: Arial, Helvetica, sans-serif;
+  visibility: visible;
+  padding: 1% 5%;
+  padding-bottom: 20px;
+  text-indent: 40px;
+  font-size: 20px;
+  color: #0d0d0d;
+  animation-name: text3;
+  animation-duration: 7s;
+  transform: rotateZ(0);
+  opacity: 1;
+  text-align: left;
+}
+@keyframes text1 {
+  0%{
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 0;
+    visibility: hidden;
+    transform: rotateZ(0deg);
+  }
+
+  75% {
+    visibility: visible;
+    transform: rotateZ(0deg);
+  }
+
+  78% {
+    transform: rotateZ(20deg);
+  }
+
+  85% {
+    transform: rotateZ(20deg);
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: rotateZ(0deg);
+  }
+}
+@keyframes text2 {
+  0%{
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 0;
+    visibility: hidden;
+    transform: rotateZ(0deg);
+  }
+
+  75% {
+    visibility: visible;
+    transform: rotateZ(0deg);
+  }
+
+  78% {
+    transform: rotateZ(-20deg);
+  }
+
+  85% {
+    transform: rotateZ(-20deg);
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: rotateZ(0deg);
+  }
+}
+@keyframes text3 {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  90% {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.city {
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  object-fit: fill;
+  background-color: transparent;
+  border-bottom: 2px solid #404040;
+  background-image: linear-gradient(#00ccff, #66ffff);
+  text-align: center;
+}
+#city1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+#city2 {
+  display: none;
+}
+.plane {
+  left: 0;
+  top: 50px;
+  position: absolute;
+  z-index: 101;
+  width: 50px;
+  height: 200px;
+  backface-visibility: visible;
+  animation-name: plane;
+  animation-duration: 100s;
+  animation-delay: 5s;
+  overflow: hidden;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  visibility: hidden;
+  overflow: hidden;
+}
+.hellobox1, .hellobox2 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  text-align: center;
+  position: absolute;
+  z-index: 99;
+  overflow: hidden;
+  border-radius: 8px;
+  font-style: arial;
+  width: 88px;
+  display: inline-block;
+  color: black;
+}
+.hellobox1 {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 90px;
+  background-color: #ccffcc;
+  backface-visibility: hidden;
+  height: 38px;
+  border: 1px solid #008000;
+  color: #002200;
+}
+.hellobox2 {
+  top: 60px;
+  background-color: #ffccff;
+  backface-visibility: visible;
+  border-radius: 8px;
+  height: auto;
+  transform: rotateY(180deg);
+  border: 1px solid #330033;
+  color: #1a001a;
+}
+.plane img {
+  position: absolute;
+  height: 50px;
+}
+@keyframes plane {
+  0% {
+    transform: rotateY(0);
+    width: 200px;
+    left: calc(100% - 100px);
+    top: 140px;
+    height: 50px;
+    visibility: visible;
+  }
+
+  25% {
+    transform: rotateY(0);
+    top: 20px;
+    left: 0;
+    width: 200px;
+    height: 50px;
+    visibility: visible;
+  }
+
+  25.01% {
+    transform: rotateY(0);
+    width: 0;
+    height: 0;
+  }
+
+  49.99% {
+    transform: rotateY(0);
+    top: 0;
+    left: 0;
+    width: 0;
+    overflow: hidden;
+    visibility: visible;
+    height: 50px;
+  }
+
+  50% {
+    transform: rotateY(180deg);
+    left: 0;
+    top: 100px;
+    visibility: visible;
+    width: 88px;
+    height: 80px;
+  }
+
+  75% {
+    top: 0;
+    left: calc(100% - 100px);
+    overflow: hidden;
+    visibility: visible;
+    transform: rotateY(180deg);
+    width: 88px;
+    height: 80px;
+  }
+
+  75.01% {
+    width: 0;
+    top: 0;
+    height: 0;
+  }
+
+  100% {
+    width: 0;
+    top: 0;
+    height: 0;
+  }
+}
+#car {
+  height: 30px;
+  position: absolute;
+  z-index: 98;
+  top: calc(50% - 30px);
+  width: 50px;
+  transform: scaleX(1.5) rotateY(180deg);
+  left: 0;
+  overflow: hidden;
+}
+.carhello {
+  position: fixed;
+  z-index: 103;
+  height: 20px;
+  width: 100px;
+  top: calc(50% - 60px);
+  margin-left: 40px;
+  animation-name: carbanner;
+  animation-iteration-count: 1;
+  animation-delay: 3s;
+  animation-duration: 3s;
+  visibility: hidden;
+  font-size: 12px;
+  padding: 2px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+@keyframes carbanner {
+  0% {
+    left: 0;
+    visibility: visible;
+    transform: scale(1, 1);
+  }
+
+  25% {
+    left: 50px;
+    visibility: visible;
+    transform: scale(1.5, 1.5);
+  }
+
+  75% {
+    left: 50px;
+    visibility: visible;
+    transform: scale(1.5, 1.5);
+  }
+
+  100% {
+    left: 0;
+    visibility: visible;
+    transform: scale(1, 1);
+  }
+}
+.mynm {
+  width: auto;
+  position: fixed;
+  z-index: 102;
+  top: 2px;
+  right: 10px;
+  text-align: center;
+  background-color: transparent;
+  padding: 6px;
+  font-size: 18px;
+  font-family: san2;
+  color: #2222ff;
+}
+ul {
+  text-align: left;
+  margin: 0 50px;
+}
+ul li {
+  font-size: 18px;
+}
+/* Mobile View */
+@media (max-width: 900px) {
+  .wrapper {
+    top: 40%;
+  }
+  .myimage1, .myimage2, .myimage3, .myimage4 {
+    padding: 10px 0;
+    height: auto;
+    flex-basis: 90%;
+    border-radius: 6px;
+  }
+  .myimage1 p, .myimage2 p, .myimage3 p, .myimage4 p {
+    font-size: 18px;
+  }
+  .city {
+    height: 35%;
+  }
+  #car {
+    top: calc(35% - 30px);
+  }
+  .carhello {
+    top: calc(35% - 60px);
+  }
+  .plane {
+    height: 180px;
+    backface-visibility: visible;
+    animation-name: plane;
+    animation-duration: 40s;
+    animation-delay: 5s;
+  }
+}
