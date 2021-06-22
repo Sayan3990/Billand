@@ -1,7 +1,7 @@
 # Billand
 My first HTML CSS Website as practice, 2019. "Billand" - it's completely a hypothetical world, the whole story was written by me.
 
-View [Billand](https://sayan3990.github.io/Billand/)
+View [Billand](https://billand-by-sayan.netlify.app/)
 
 ## History
 In 2019, I have started with web development. I have go through HTML and CSS. 
