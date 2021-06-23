@@ -18,4 +18,4 @@ If you didn't know about 'Billand' or 'Billo', you can read above sections.<br>
 
 
 ## History
-In 2019, I have started with web development. I have go through HTML and CSS. After learning, HTML and CSS I have designed [this website](https://billand-by-sayan.netlify.app/). It was my very first website as practice with pure HTML ans CSS. Now, I am updating it with my recent projects.
+In 2020, I have started with web development. I have go through HTML and CSS. After learning, HTML and CSS I have designed [this website](https://billand-by-sayan.netlify.app/). It was my very first website as practice with pure HTML ans CSS. Now, I am updating it with my recent projects.
