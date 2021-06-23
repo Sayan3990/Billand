@@ -1,7 +1,9 @@
 # Billand
 My first HTML CSS Website as practice, 2019.
-
-View [Billand](https://billand-by-sayan.netlify.app/)
+<center>
+  [](aseets/profile-sayan-bhattacharyya.ico)
+</center>
+View [Billand Official Website](https://billand-by-sayan.netlify.app/)
 
 ## History
 In 2019, I have started with web development. I have go through HTML and CSS. 
