@@ -1,15 +1,18 @@
-var load = document.querySelector(".load");
-var car = document.querySelector("#car");
-var city = document.querySelector(".city");
-var plane = document.querySelector(".plane");
-var wrapper = document.querySelector(".wrapper");
-var button = document.querySelector("#button");
+const load = document.querySelector(".load");
+const car = document.querySelector("#car");
+const city = document.querySelector(".city");
+const plane = document.querySelector(".plane");
+const wrapper = document.querySelector(".wrapper");
+const button = document.querySelector("#button");
+const audio = new Audio('./assets/walking-crowd-at-subway-station.wav');
 
-var loadTime = setTimeout(()=>{
+const loadTime = setTimeout(()=>{
   load.style.visibility = "hidden";
+  audio.play();
+  audio.loop = true;
 }, 3000);
 
-var prevData = 0;
+let prevData = 0;
 
 window.addEventListener('scroll', function() {
   let scrollpx = window.scrollY;
