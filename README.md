@@ -7,7 +7,7 @@
 
 ## Billand and Billo
 
-#### Eww! "Billand" - it's completely a hypothetical world, the whole story was written by me and I am so bad in literature.
+#### Eww! "Billand" - it's completely a hypothetical world, the whole story was written by me and I am so bad in literature. It's for fun.
 
 - If you didn't know about 'Billand' or 'Billo', you can read above sections.<br>
   - [What's Billand?](https://billand-by-sayan.netlify.app/index2.html#billand)<br>
