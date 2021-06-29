@@ -3,7 +3,7 @@
 
 ## Deployed site
 - View [Billand](https://billand-by-sayan.netlify.app/) Official Website
-
+- Visit [My Personal Website](https://sayan-bhattacharyya.netlify.app/)
 
 ## Billand and Billo
 
