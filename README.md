@@ -3,7 +3,7 @@
 
 ## Deployed site
 - View [Billand](https://billand-by-sayan.netlify.app/) Official Website
-- Visit [My Personal Website](https://sayan-bhattacharyya.netlify.app/)
+- Visit [My Personal Website](https://sayanbhattacharyya.me/)
 
 ## Billand and Billo
 
@@ -17,5 +17,5 @@
 
 
 ## History
-- In 2020, I have started with web development. I have go through HTML and CSS. After learning, HTML and CSS I have designed [this website](https://billand-by-sayan.netlify.app/). It was my very first website as practice with pure HTML ans CSS. 
+- In 2020, I have started with web development. I have gone through HTML and CSS. After acquiring some basics of HTML/CSS, I have tried to design [this website](https://billand-by-sayan.netlify.app/). It was my very first website as practice with pure HTML/CSS and Js. 
 - Now, I am updating it with my recent projects.
